@@ -1,7 +1,7 @@
-DROP TABLE IF EXISTS pokemon CASCADE;
+DROP TABLE IF EXISTS pokemons CASCADE;
 
-
-CREATE TABLE pokemon (
+CREATE TABLE pokemons (
+  id SERIAL PRIMARY KEY,
   name VARCHAR(255),
   cp INTEGER,
   poke_type VARCHAR(255),

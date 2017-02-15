@@ -1,0 +1,24 @@
+<h2>Edit a poke in yer pokedex</h2>
+
+<form action="/pokemon/<%=@poke.id %>" method="post">
+  <input type="hidden" name="_method" value="put" />
+
+  <label form="poke[name]">Name:</label>
+  <input name="poke[name]" value="<%=@poke.name%>">
+
+  <label form="poke[cp]">Enter CP:</label>
+  <input name="poke[cp]" value="<%=@poke.cp%>">
+
+  <label form="poke[poke_type]">Enter Poke Type:</label>
+  <input name="poke[poke_type]" value="<%=@poke.poke_type%>">
+
+  <label form="pokex[img_url]">Image URL:</label>
+  <input name="poke[img_url]" value="<%=@poke.img_url%>"/>
+
+  <input type="submit" value="Create" />
+</form>
+
+<form action="/pokemon/<%=@poke.id %>" method="post">
+  <input type="hidden" name="_method" value="delete" />
+  <input type="submit" value="!DELETE!" />
+</form>
